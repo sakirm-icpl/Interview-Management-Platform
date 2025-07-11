@@ -1,0 +1,341 @@
+[
+  {
+    "model": "core.department",
+    "fields": {
+      "name": "Engineering",
+      "description": "Software development and technical roles",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.department",
+    "fields": {
+      "name": "Marketing",
+      "description": "Marketing, advertising, and communications",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.department",
+    "fields": {
+      "name": "Sales",
+      "description": "Sales and business development",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.department",
+    "fields": {
+      "name": "Human Resources",
+      "description": "HR, recruitment, and people operations",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.department",
+    "fields": {
+      "name": "Finance",
+      "description": "Finance, accounting, and operations",
+      "is_active": true
+    }
+  },
+  {
+    "model": "core.skill",
+    "fields": {
+      "name": "Python",
+      "category": "Programming",
+      "description": "Python programming language"
+    }
+  },
+  {
+    "model": "core.skill",
+    "fields": {
+      "name": "JavaScript",
+      "category": "Programming",
+      "description": "JavaScript programming language"
+    }
+  },
+  {
+    "model": "core.skill",
+    "fields": {
+      "name": "React",
+      "category": "Frontend",
+      "description": "React.js framework"
+    }
+  },
+  {
+    "model": "core.skill",
+    "fields": {
+      "name": "Django",
+      "category": "Backend",
+      "description": "Django web framework"
+    }
+  },
+  {
+    "model": "core.skill",
+    "fields": {
+      "name": "PostgreSQL",
+      "category": "Database",
+      "description": "PostgreSQL database"
+    }
+  },
+  {
+    "model": "core.skill",
+    "fields": {
+      "name": "AWS",
+      "category": "Cloud",
+      "description": "Amazon Web Services"
+    }
+  },
+  {
+    "model": "core.skill",
+    "fields": {
+      "name": "Docker",
+      "category": "DevOps",
+      "description": "Docker containerization"
+    }
+  },
+  {
+    "model": "core.skill",
+    "fields": {
+      "name": "Git",
+      "category": "Tools",
+      "description": "Git version control"
+    }
+  },
+  {
+    "model": "core.skill",
+    "fields": {
+      "name": "Agile",
+      "category": "Methodology",
+      "description": "Agile development methodology"
+    }
+  },
+  {
+    "model": "core.skill",
+    "fields": {
+      "name": "Leadership",
+      "category": "Soft Skills",
+      "description": "Team leadership and management"
+    }
+  },
+  {
+    "model": "core.skill",
+    "fields": {
+      "name": "Communication",
+      "category": "Soft Skills",
+      "description": "Effective communication skills"
+    }
+  },
+  {
+    "model": "core.skill",
+    "fields": {
+      "name": "Problem Solving",
+      "category": "Soft Skills",
+      "description": "Analytical problem solving"
+    }
+  },
+  {
+    "model": "users.user",
+    "fields": {
+      "email": "admin@company.com",
+      "username": "admin",
+      "first_name": "Admin",
+      "last_name": "User",
+      "role": "admin",
+      "is_verified": true,
+      "is_active": true,
+      "is_staff": true,
+      "is_superuser": true,
+      "password": "pbkdf2_sha256$600000$admin123$admin123"
+    }
+  },
+  {
+    "model": "users.user",
+    "fields": {
+      "email": "hr@company.com",
+      "username": "hr_manager",
+      "first_name": "HR",
+      "last_name": "Manager",
+      "role": "hr",
+      "is_verified": true,
+      "is_active": true,
+      "department": 4,
+      "job_title": "HR Manager",
+      "password": "pbkdf2_sha256$600000$hr123$hr123"
+    }
+  },
+  {
+    "model": "users.user",
+    "fields": {
+      "email": "interviewer@company.com",
+      "username": "tech_interviewer",
+      "first_name": "Tech",
+      "last_name": "Interviewer",
+      "role": "interviewer",
+      "is_verified": true,
+      "is_active": true,
+      "department": 1,
+      "job_title": "Senior Software Engineer",
+      "password": "pbkdf2_sha256$600000$interviewer123$interviewer123"
+    }
+  },
+  {
+    "model": "users.user",
+    "fields": {
+      "email": "candidate@example.com",
+      "username": "john_doe",
+      "first_name": "John",
+      "last_name": "Doe",
+      "role": "candidate",
+      "is_verified": true,
+      "is_active": true,
+      "phone_number": "+1234567890",
+      "experience_years": 3,
+      "password": "pbkdf2_sha256$600000$candidate123$candidate123"
+    }
+  },
+  {
+    "model": "jobs.job",
+    "fields": {
+      "title": "Senior Software Engineer",
+      "department": 1,
+      "description": "We are looking for a Senior Software Engineer to join our growing team. You will be responsible for designing, developing, and maintaining high-quality software solutions.",
+      "requirements": "• 5+ years of experience in software development\n• Strong proficiency in Python, JavaScript, and React\n• Experience with Django and PostgreSQL\n• Knowledge of AWS and Docker\n• Excellent problem-solving skills",
+      "responsibilities": "• Design and implement scalable software solutions\n• Collaborate with cross-functional teams\n• Mentor junior developers\n• Participate in code reviews\n• Contribute to technical architecture decisions",
+      "employment_type": "full_time",
+      "experience_level": "senior",
+      "work_model": "hybrid",
+      "location": "San Francisco, CA",
+      "salary_min": 120000.00,
+      "salary_max": 180000.00,
+      "salary_currency": "USD",
+      "is_salary_negotiable": true,
+      "min_experience_years": 5,
+      "education_required": "Bachelor's degree in Computer Science or related field",
+      "application_deadline": "2024-12-31T23:59:59Z",
+      "is_active": true,
+      "status": "published",
+      "posted_by": 2,
+      "keywords": "python, javascript, react, django, aws, docker, senior engineer"
+    }
+  },
+  {
+    "model": "jobs.job",
+    "fields": {
+      "title": "Frontend Developer",
+      "department": 1,
+      "description": "Join our frontend team to build beautiful and responsive user interfaces. We're looking for someone passionate about modern web technologies.",
+      "requirements": "• 3+ years of experience in frontend development\n• Strong proficiency in JavaScript, React, and TypeScript\n• Experience with modern CSS frameworks\n• Knowledge of responsive design principles\n• Familiarity with Git and version control",
+      "responsibilities": "• Build responsive and accessible user interfaces\n• Collaborate with designers and backend developers\n• Optimize application performance\n• Write clean and maintainable code\n• Participate in agile development process",
+      "employment_type": "full_time",
+      "experience_level": "mid",
+      "work_model": "remote",
+      "location": "Remote",
+      "salary_min": 80000.00,
+      "salary_max": 120000.00,
+      "salary_currency": "USD",
+      "is_salary_negotiable": true,
+      "min_experience_years": 3,
+      "education_required": "Bachelor's degree in Computer Science or related field",
+      "application_deadline": "2024-12-31T23:59:59Z",
+      "is_active": true,
+      "status": "published",
+      "posted_by": 2,
+      "keywords": "javascript, react, typescript, frontend, ui, remote"
+    }
+  },
+  {
+    "model": "jobs.job",
+    "fields": {
+      "title": "Marketing Manager",
+      "department": 2,
+      "description": "We're seeking a creative and data-driven Marketing Manager to lead our marketing initiatives and drive brand awareness.",
+      "requirements": "• 4+ years of experience in marketing\n• Experience with digital marketing channels\n• Strong analytical skills\n• Excellent communication abilities\n• Experience with marketing automation tools",
+      "responsibilities": "• Develop and execute marketing strategies\n• Manage digital marketing campaigns\n• Analyze marketing performance metrics\n• Collaborate with sales and product teams\n• Lead content creation initiatives",
+      "employment_type": "full_time",
+      "experience_level": "mid",
+      "work_model": "hybrid",
+      "location": "New York, NY",
+      "salary_min": 70000.00,
+      "salary_max": 100000.00,
+      "salary_currency": "USD",
+      "is_salary_negotiable": true,
+      "min_experience_years": 4,
+      "education_required": "Bachelor's degree in Marketing or related field",
+      "application_deadline": "2024-12-31T23:59:59Z",
+      "is_active": true,
+      "status": "published",
+      "posted_by": 2,
+      "keywords": "marketing, digital marketing, campaigns, analytics, brand"
+    }
+  },
+  {
+    "model": "jobs.jobapplication",
+    "fields": {
+      "job": 1,
+      "candidate": 4,
+      "cover_letter": "I am excited to apply for the Senior Software Engineer position. With 3 years of experience in Python and React development, I believe I would be a great fit for your team. I have worked on several large-scale projects and have experience mentoring junior developers.",
+      "resume": "resumes/john_doe_resume.pdf",
+      "portfolio_url": "https://github.com/johndoe",
+      "status": "applied",
+      "ai_screening_score": 85.50,
+      "ai_screening_summary": "Candidate shows strong technical skills in Python and React. Good communication skills demonstrated in cover letter. Experience level slightly below requirement but shows potential for growth.",
+      "ai_screening_completed": true
+    }
+  },
+  {
+    "model": "jobs.jobquestion",
+    "fields": {
+      "job": 1,
+      "question_text": "Describe a challenging technical problem you solved recently.",
+      "question_type": "textarea",
+      "is_required": true,
+      "order": 1
+    }
+  },
+  {
+    "model": "jobs.jobquestion",
+    "fields": {
+      "job": 1,
+      "question_text": "What is your experience with microservices architecture?",
+      "question_type": "textarea",
+      "is_required": false,
+      "order": 2
+    }
+  },
+  {
+    "model": "jobs.jobquestion",
+    "fields": {
+      "job": 1,
+      "question_text": "How do you handle conflicts in a team environment?",
+      "question_type": "textarea",
+      "is_required": true,
+      "order": 3
+    }
+  },
+  {
+    "model": "jobs.applicationanswer",
+    "fields": {
+      "application": 1,
+      "question": 1,
+      "answer_text": "Recently, I solved a performance issue in our React application where the dashboard was taking 10+ seconds to load. I implemented React.memo for expensive components, optimized database queries, and added proper indexing. This reduced load time to under 2 seconds."
+    }
+  },
+  {
+    "model": "jobs.applicationanswer",
+    "fields": {
+      "application": 1,
+      "question": 2,
+      "answer_text": "I have experience with microservices using Docker and Kubernetes. I've worked on projects where we broke down a monolithic application into smaller, focused services that communicate via REST APIs."
+    }
+  },
+  {
+    "model": "jobs.applicationanswer",
+    "fields": {
+      "application": 1,
+      "question": 3,
+      "answer_text": "I believe in open communication and addressing conflicts directly. I try to understand different perspectives and find common ground. In my previous role, I mediated a disagreement between team members about code architecture by organizing a design review session."
+    }
+  }
+]
